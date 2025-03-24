@@ -1,3 +1,23 @@
 spring:
   application:
     name: Streamer
+  threads:
+      virtual:
+        enabled: true
+
+aws:
+  accessKeyId: your_access_key
+  secretKey: your_secret_key
+  bucketName: your_bucket_name
+  cdnDomain: https://your_cloudfront_domain
+
+gcp:
+  credentials:
+    file: path/to/credentials.json
+  bucketName: your_bucket_name
+  cdnDomain: https://your_gcp_cdn_domain
+
+azure:
+  connectionString: your_connection_string
+  containerName: your_container_name
+  cdnDomain: https://your_azure_cdn_domain
